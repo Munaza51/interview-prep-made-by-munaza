@@ -79,13 +79,26 @@ nav ul li a {
 }
 
 #ratingSection {
-    font-size: 1em;
+    font-size: 2em;
 }
 
-.fa-star {
-    cursor: pointer;
-    color: #FFD700;
-}
+.star {
+    font-size: 2em; /* Size of the stars */
+    color: gold; /* Color of the stars */
+    margin: 0 5px; /* Space between stars */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .star:hover,
+  .star:hover ~ .star {
+    color: darkorange; /* Color of stars on hover */
+  }
+  
+  .star.selected,
+  .star.selected ~ .star {
+    color: darkorange; /* Color of selected stars */
+  }
 
 footer {
     background-color: rgba(0, 0, 0, 0.8);
