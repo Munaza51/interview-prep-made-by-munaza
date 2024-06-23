@@ -1,1 +1,157 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/space-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Pacifico', cursive;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#comments {
+    margin-top: 50px;
+}
+
+#commentBox {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+#submitComment {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#commentsSection {
+    margin-top: 20px;
+}
+
+#ratingSection {
+    font-size: 2em;
+}
+
+.fa-star {
+    cursor: pointer;
+    color: #FFD700;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.schedule-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.schedule-content h3, .schedule-content h4, .schedule-content ul {
+    margin: 20px 0;
+}
+
+.schedule-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.schedule-content li {
+    margin-bottom: 10px;
+}
+
+
+.daily-routine-box {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.daily-routine-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.daily-routine-table th,
+.daily-routine-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.daily-routine-table th {
+    background-color: #f2f2f2;
+}
+
+@keyframes clickAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.animated-click {
+    animation: clickAnimation 0.5s ease;
+}
+
 
